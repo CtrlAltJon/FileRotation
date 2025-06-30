@@ -42,6 +42,7 @@ to run the script every day at 2:00 AM, keeping only the last 7 `.tar.gz` files 
 
 ```cron
 0 2 * * * /bin/bash /path/to/RotateFile.sh --source /var/backups --keep 7 --pattern '.*\.tar\.gz$' --silent
+```
 
 ## Requirements
 
