@@ -1,6 +1,6 @@
 # FileRotation
 
-**FileRotation** is a Bash script that automates file rotation, deletion, and management in a directory according to configurable criteria.
+**FileRotation** is a Bash script that automates file deletion in a directory according to configurable criteria.
 
 ## Features
 
