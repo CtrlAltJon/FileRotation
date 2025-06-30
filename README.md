@@ -37,6 +37,12 @@ Simulate actions without deleting anything:
 bash RotateFile.sh --source /var/backups --dry-run
 ```
 
+Scheduled Execution with Crontab:
+to run the script every day at 2:00 AM, keeping only the last 7 `.tar.gz` files in `/var/backups` and suppressing output (`--silent`):
+
+```cron
+0 2 * * * /bin/bash /path/to/RotateFile.sh --source /var/backups --keep 7 --pattern '.*\.tar\.gz$' --silent
+
 ## Requirements
 
 - Bash 4+
