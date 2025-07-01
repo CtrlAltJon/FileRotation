@@ -122,8 +122,7 @@ if [ "$SILENT" = false ]; then
   echo ""
 fi
 
-FILE_LIST=$(find "$PATH_SOURCE" -maxdepth 1 -type f -print0 | grep -z -E "$PATTERN" | sort -z | tr '\0' '\n')
-#NUM_FILES=$(printf "%s\n" "$FILE_LIST" | wc -l)
+FILE_LIST=$(find "$PATH_SOURCE" -maxdepth 1 -type f -printf '%T@ %p\0' | grep -z -E "$PATTERN" | sort -z -n | tr '\0' '\n' | cut -d' ' -f2-)
 NUM_FILES=$(echo "$FILE_LIST" | grep -c .)
 
 if [ "$NUM_FILES" -le 1 ]; then
