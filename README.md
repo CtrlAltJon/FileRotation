@@ -1,6 +1,6 @@
-# FileRotation
+# RotateFile.sh
 
-**FileRotation** is a Bash script that automates file deletion in a directory according to configurable criteria.
+ Bash script that automates file deletion in a directory according to configurable criteria.
 
 ## Features
 
