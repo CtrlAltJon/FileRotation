@@ -2,6 +2,7 @@
 
  Bash script that automates file deletion in a directory according to configurable criteria.
 
+
 ## Features
 
 - Automatic rotation of files in a directory
@@ -9,6 +10,7 @@
 - Option to keep only a specific number of recent files
 - Silent and dry-run modes for safe testing
 - Detailed and customizable output
+
 
 ## Usage
 
@@ -24,6 +26,7 @@ bash RotateFile.sh --source <directory> [--keep <N>] [--pattern <regex>] [--dry-
 - `--dry-run`: Show actions without actually deleting files.
 - `--silent`: Reduce output verbosity.
 - `--help`, `-h`, `?`: Show help and available options.
+
 
 ### Examples
 
@@ -49,15 +52,25 @@ to run the script every day at 2:00 AM, keeping only the last 7 `.tar.gz` files 
 - Bash 4+
 - Standard Unix commands: `find`, `grep`, `sort`, `awk`, `rm`
 
+
 ## Security Notes
 
 - The script does not contain hardcoded credentials.
 - Always verify the directory and pattern before performing actual deletions.
 
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to [open an issue](https://github.com/CtrlAltJon/MikroTikUtils/issues) or submit a pull request.
+
+
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 ## Author
 
 CtrlAltJon
+
